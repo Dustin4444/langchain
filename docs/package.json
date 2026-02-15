@@ -22,10 +22,10 @@
     "check-broken-links": "make vercel-build && node ./scripts/check-broken-links.js"
   },
   "dependencies": {
-    "@docusaurus/core": "3.5.2",
+    "@docusaurus/core": "3.8.0",
     "@docusaurus/preset-classic": "3.5.2",
     "@docusaurus/remark-plugin-npm2yarn": "^3.5.2",
-    "@docusaurus/theme-mermaid": "3.5.2",
+    "@docusaurus/theme-mermaid": "3.8.0",
     "@giscus/react": "^3.0.0",
     "@mdx-js/react": "^3",
     "@supabase/supabase-js": "^2.39.7",
@@ -47,7 +47,7 @@
     "@langchain/scripts": "^0.0.10",
     "docusaurus-plugin-typedoc": "next",
     "dotenv": "^16.4.5",
-    "eslint": "^8.19.0",
+    "eslint": "^10.0.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-header": "^3.1.1",
