@@ -1,0 +1,14 @@
+- pipeline: ffinance
+  name: Pipeline 2
+  refs:
+  - refs/heads/replit-agent
+  loop:
+  - asw
+  always_from_scratch: true
+  auto_clear_cache: true
+  fetch_lfs: true
+  fail_on_prepare_env_warning: true
+  description_required: true
+  events:
+  - type: WEBHOOK
+  docker_build_cache: WORKSPACE
