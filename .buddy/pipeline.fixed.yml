@@ -26,3 +26,10 @@
     shell: BASH
     docker_image_name: library/node
     docker_image_tag: 24
+  - action: Claude Code
+    type: CLAUDE_CODE
+    trigger_time: ON_WAIT_FOR_APPROVE
+    integration: anthropic
+    prompts:
+    - file: BUDDY_RUN_WEBHOOK_PAYLOAD$$CI
+    model: sonnet
