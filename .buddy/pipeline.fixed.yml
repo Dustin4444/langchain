@@ -12,3 +12,16 @@
   events:
   - type: WEBHOOK
   docker_build_cache: WORKSPACE
+  actions:
+  - action: npm run test
+    type: BUILD
+    commands: |-
+      export METEOR_ALLOW_SUPERUSER="true"
+      npm install
+      npm run test
+    setup_commands: |-
+      apt-get update && apt-get install -y curl
+      curl https://install.meteor.com -k | sh
+    shell: BASH
+    docker_image_name: library/node
+    docker_image_tag: 24
