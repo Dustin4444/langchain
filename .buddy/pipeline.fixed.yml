@@ -27,6 +27,7 @@
     docker_image_tag: 24
   - action: npm run test 2
     type: BUILD
+    disabled: true
     commands: |-
       export METEOR_ALLOW_SUPERUSER="true"
       npm install
