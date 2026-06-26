@@ -11,6 +11,7 @@
   description_required: true
   events:
   - type: WEBHOOK
+    totp: true
   docker_build_cache: WORKSPACE
   actions:
   - action: npm run test
